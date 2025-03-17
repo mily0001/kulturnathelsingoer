@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/Layout.astro";
+import EventCard from "../components/EventCard.astro";
+---
+
+<Layout>
+  <section class="program-page">
+    <h1 class="program-title">Program</h1>
+    <div class="event-list">
+      <EventCard
+        title="Hønseskidning"
+        time="15:00"
+        description="Tror du på held? Så kom og prøv kræfter med den legendariske hønseskidning – et festligt og skørt spil, hvor hønsene bestemmer skæbnen! Pladen er opdelt i felter med numre, og din opgave er at satse på, hvor hønen vælger at besørge. Hvem ved? Måske har du en særlig sans for hønseintuition"
+        image="img1.png"
+      />
+
+      <EventCard
+        title="Rundvisning på Kronborg"
+        time="16:00"
+        description="Oplev historiens vingesus."
+        image="/images/kronborg.jpg"
+      />
+
+      <EventCard
+        title="Parkour på Domkirken"
+        time="17:00"
+        description="Se imponerende parkour tricks!"
+        image="/images/parkour.jpg"
+      />
+
+      <EventCard
+        title="Symfoni i Søfartsmuseet – Musik under havets overflade"
+        time="18:00"
+        description="Oplev en stemningsfuld koncert."
+        image="/images/symfoni.jpg"
+      />
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .program-page {
+    text-align: center;
+    background-color: #0d2545;
+    color: white;
+    padding: 2rem;
+  }
+
+  .program-title {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #ff6f00;
+    margin-bottom: 1.5rem;
+  }
+
+  .event-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+</style>
