@@ -14,10 +14,32 @@ body {
   );
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 .hero {
   img {
     width: 100%;
     height: auto;
   }
+}
+h1 {
+  color: rgb(255, 126, 34);
+  font-size: 190px;
+}
+.tal_font {
+  color: white;
+  font-family: "Tangerine", cursive;
+}
+.overskrift {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.overst {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+.nederst {
+  grid-column: 2 / 3;
+  grid-row: 2;
 }
