@@ -3,30 +3,32 @@
 ---
 
 <article class="header">
-  <li>
-    <a href="/index" class="forside">
-      <img src=" ../src/assets/logo.webp" alt="Logo" />
-    </a>
-  </li>
-  <nav>
-    <ul class="menu">
-      <li><a href="/programpage" class="program">Program</a></li>
-      <li><a href="/galleri" class="galleri">Galleri</a></li>
+  <a href="../index" class="forside">
+    <img src=" ../src/assets/logo.webp" alt="Logo" />
+  </a>
+  <nav class="menu">
+    <ul class="menu_punkter">
       <li>
-        <a href="/omkulturnat" class="omkulturnat">Om Kulturnat</a>
+        <a href="/programpage" class="menu-item">Program</a>
       </li>
-      <li><a href="/arrangoer" class="arrangoer">Arrangør</a></li>
+      <li><a href="/galleri" class="menu-item">Galleri</a></li>
+      <li>
+        <a href="/omkulturnat" class="menu-item">Om Kulturnat</a>
+      </li>
+      <li><a href="/arrangoer" class="menu-item">Arrangør</a></li>
     </ul>
   </nav>
 </article>
 
 <style>
-  .menu {
+  .menu_punkter {
     display: flex;
     list-style: none;
-    padding: 0;
-    gap: 15px;
-    padding: 20px;
+    gap: 15px; /* Juster afstanden mellem menupunkterne */
+  }
+  .menu li {
+    margin: 0;
+    list-style: none;
   }
   .menu a {
     display: block;
@@ -40,5 +42,28 @@
   .header {
     display: flex;
     justify-content: space-between;
+    align-items: center; /* Juster vertikalt i midten */
+  }
+  .menu-item {
+    position: relative;
+  }
+
+  /* Bølge-effekten */
+  .menu-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgb(255, 126, 34);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+  /* Når musen hover over menupunktet */
+  .menu-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 </style>
