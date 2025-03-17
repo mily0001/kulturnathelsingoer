@@ -37,20 +37,40 @@ h1 {
   color: rgb(255, 126, 34);
   font-size: 190px;
 }
-.tal_font {
+h2 {
   color: white;
-  font-family: "Tangerine", cursive;
+  font-size: 30px;
+  grid-column: 3 / span 4;
+}
+.underoverskrift {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 .overskrift {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column; /* Placer overskrifterne vertikalt */
+  align-items: flex-start; /* Juster til venstre */
+  margin: 1rem 15rem;
 }
-.overst {
-  grid-column: 1 / 2;
-  grid-row: 1;
-}
+
 .nederst {
-  grid-column: 2 / 3;
-  grid-row: 2;
+  margin-left: 5rem;
+}
+.tal_font {
+  color: white;
+  font-size: 275px;
+  font-family: fantasy;
+  padding: 0 4rem;
+}
+.fakta {
+  text-align: center;
+  margin: 5rem;
+}
+.orange_tekststykke {
+  background-color: rgb(255, 126, 34);
+  font-size: 30px;
+  padding: 2rem;
+}
+.stor_tekst {
+  font-size: 60px;
 }
