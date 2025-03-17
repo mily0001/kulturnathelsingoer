@@ -3,7 +3,18 @@ body {
   height: 100%;
   margin: 0;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 body {
   background: rgb(6, 30, 71);
   background: linear-gradient(
