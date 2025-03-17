@@ -1,0 +1,73 @@
+---
+const { title, time, description, image } = Astro.props;
+---
+
+<div class="event-card">
+  <p class="event-time">Kl. {time}</p>
+  <hr class="event-divider" />
+  <h2 class="event-title">{title}</h2>
+  <img src={image} alt={title} class="event-image" />
+  <p class="event-description">{description}</p>
+  <button class="event-button">Læs mere</button>
+</div>
+
+<style>
+  .event-card {
+    background-color: #0d2545;
+    color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .event-time {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .event-divider {
+    width: 80px;
+    height: 2px;
+    background-color: #ff6f00;
+    border: none;
+    margin: 0.5rem auto;
+  }
+
+  .event-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+
+  .event-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+
+  .event-description {
+    font-size: 1rem;
+    margin: 1rem 0;
+    line-height: 1.5;
+  }
+
+  .event-button {
+    border: 2px solid white;
+    background: none;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .event-button:hover {
+    background: white;
+    color: #0d2545;
+  }
+</style>
