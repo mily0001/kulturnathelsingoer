@@ -70,7 +70,46 @@ h2 {
   background-color: rgb(255, 126, 34);
   font-size: 30px;
   padding: 2rem;
+  margin: 4rem 0;
 }
 .stor_tekst {
   font-size: 60px;
+}
+.knapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 25px;
+}
+.boat img {
+  margin-left: auto;
+  width: 15%;
+  padding: 10px;
+  display: block; /* Sørg for, at billedet bliver et block-element */
+}
+.boat_nederst img {
+  width: 20%;
+  rotate: -25deg;
+  margin: 1rem;
+  display: block; /* Sørg for, at billedet bliver et block-element */
+}
+
+.boat_oppe {
+  position: relative;
+  rotate: -25deg;
+}
+
+.boat_oppe img {
+  position: absolute;
+  width: 20%;
+  top: 50%; /* Centrer lodret */
+  left: 50%; /* Centrer vandret */
+  transform: translate(-38%, -75%); /* Juster billedet for præcis centrering */
+}
+.boelge1 {
+  transform: translate(126%, 99%);
+  width: 45%;
+}
+.boelge2 {
+  width: 45%;
+  transform: translate(0%, 73%);
 }

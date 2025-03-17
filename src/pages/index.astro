@@ -1,6 +1,7 @@
 ---
 import "../styles/style.css";
 import Header from "../components/Header.astro";
+import Knap from "../components/KnapForside.astro";
 ---
 
 <!doctype html>
@@ -27,6 +28,11 @@ import Header from "../components/Header.astro";
         19. september: Tikøb<br />26. september: Helsingør & Espergærde
       </h2>
     </div>
+    <img class="boelge1" src="../src/assets/boelge.svg" alt="bølge" />
+    <img class="boelge2" src="../src/assets/boelge.svg" alt="bølge" />
+    <div class="boat_oppe">
+      <img src="../src/assets/boat.svg" alt="båd" />
+    </div>
     <div class="hero">
       <img src="../src/assets/bygninger.webp" alt="Hero" />
     </div>
@@ -40,5 +46,17 @@ import Header from "../components/Header.astro";
         liv.
       </p>
     </section>
+    <div class="boat">
+      <img src="../src/assets/boat.svg" alt="båd" />
+    </div>
+    <div class="knapper">
+      <Knap link="/programpage" text="Se program" />
+      <Knap link="/galleri" text="Se galleri" />
+      <Knap link="/omkulturnat" text="Om Kulturnatten" />
+      <Knap link="/arrangoer" text="Er du arrangør?" />
+    </div>
+    <div class="boat_nederst">
+      <img src="../src/assets/boat.svg" alt="båd" />
+    </div>
   </body>
 </html>
