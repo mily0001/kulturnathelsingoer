@@ -14,6 +14,9 @@ video {
   height: auto;
   display: block;
 }
+.menu {
+  display: none;
+}
 body {
   background: rgb(6, 30, 71);
   background: linear-gradient(
@@ -94,7 +97,7 @@ h2 {
 }
 .fakta {
   text-align: center;
-  font-family: Playfair Display;
+  font-family: Xanh Mono;
   margin: 2rem;
 }
 .orange_tekststykke {
@@ -128,7 +131,6 @@ h2 {
   h1 {
     font-size: 190px;
   }
-
   h2 {
     font-size: 30px;
     grid-column: 3 / span 4;
