@@ -2,6 +2,7 @@
 import "../styles/style.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Knap from "../components/KnapForside.astro";
 ---
 
 <!doctype html>
@@ -13,7 +14,40 @@ import Footer from "../components/Footer.astro";
   </head>
   <body>
     <Header />
-    <main></main>
-    <Footer />
+    <main>
+      <h1 class="h1_om_kultur">Hvad er Kulturnatten?</h1>
+      <div class="boat_kultur">
+        <img src="../src/assets/boat.svg" alt="båd" />
+      </div>
+      <div class="tekst">
+        <div class="tekststykke">
+          <p>
+            <span class="stor_tekst">Kulturnætterne</span> i Helsingør Kommune er
+            en årlig tilbagevendende begivenhed. Hvert år samles vi i slutningen
+            af september til musik på hjørnerne af Helsingørs gågader, fællesspisning
+            i Tikøb, koncerter og liv på alle torvene i Espergærde Centret – eller
+            rundt omkring i byerne på kulturinstitutionerne, i kirkerne, museerne
+            … You name it! Lige meget hvor i Nordsjælland du er fra, er der noget
+            i nærheden af dig til Kulturnatten. Glæd dig til at byernes kulturinstitutioner,
+            handelslivet og det lokale foreningsliv åbner dørene og sammen med byens
+            borgere skaber en livgivende aften i de ellers stille efterårsgader. 
+            Programmet bliver til løbende, så husk også at tjekke på selve dagen,
+            hvad du vil opleve.
+          </p>
+        </div>
+      </div>
+      <div class="boat_kultur2">
+        <img src="../src/assets/boat.svg" alt="båd" />
+      </div>
+      <div class="knapper">
+        <Knap link="/programpage" text="Se program" />
+        <Knap text="Kontakt Kulturnatten" />
+      </div>
+      <h2 class="fakta">
+        Kulturnatten er støttet af Helsingør Kommune.<br />
+        Foreningen Elsinore 2032 er på frivillig basis sekretariat for Kulturnatten
+      </h2>
+    </main>
   </body>
+  <Footer />
 </html>

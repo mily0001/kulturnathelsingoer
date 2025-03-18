@@ -203,4 +203,31 @@ h2 {
     width: 45%;
     transform: translate(0%, 73%);
   }
+  /* OM KULTURNATTEN */
+  .h1_om_kultur {
+    font-size: 128px;
+    font-family: Playfair Display;
+    text-align: center;
+  }
+  .tekst {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    color: white;
+    font-family: Playfair Display;
+    font-size: 20px;
+    padding: 1rem;
+    margin: 2rem 0;
+  }
+  .tekststykke {
+    grid-column: 2 / span 3;
+  }
+  .boat_kultur {
+    width: 10%;
+    transform: translate(740%, 20%);
+  }
+  .boat_kultur2 {
+    width: 10%;
+    transform: translate(100%, 10%);
+    rotate: -20deg;
+  }
 }
