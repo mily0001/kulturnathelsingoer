@@ -8,7 +8,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
 img,
 video {
   width: 100%;
@@ -27,67 +26,47 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+h1 {
+  color: rgb(255, 126, 34);
+  font-size: 100px;
+  font-family: Playfair Display;
+  font-weight: 900;
+}
+h2 {
+  color: white;
+  font-size: 20px;
+  font-family: Xanh Mono;
+  grid-column: 3 / span 4;
+}
 .hero {
   img {
     width: 100%;
     height: auto;
   }
 }
-h1 {
-  color: rgb(255, 126, 34);
-  font-size: 190px;
-}
-h2 {
-  color: white;
-  font-size: 30px;
-  grid-column: 3 / span 4;
-}
-.underoverskrift {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-}
 .overskrift {
   display: flex;
   flex-direction: column; /* Placer overskrifterne vertikalt */
   align-items: flex-start; /* Juster til venstre */
-  margin: 1rem 15rem;
-}
-
-.nederst {
-  margin-left: 5rem;
+  margin: 1rem 5rem;
 }
 .tal_font {
   color: white;
-  font-size: 275px;
-  font-family: fantasy;
-  padding: 0 4rem;
+  font-size: 110px;
+  font-family: Xanh Mono;
 }
-.fakta {
-  text-align: center;
-  margin: 5rem;
-}
-.orange_tekststykke {
-  background-color: rgb(255, 126, 34);
-  font-size: 30px;
-  padding: 2rem;
-  margin: 4rem 0;
-}
-.stor_tekst {
-  font-size: 60px;
-}
-.knapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 25px;
+.underoverskrift {
+  margin-left: 5rem;
 }
 .boat img {
   margin-left: auto;
-  width: 15%;
-  padding: 10px;
+  width: 14%;
+  transform: translate(-6%, 55%);
+  rotate: -7deg;
   display: block; /* Sørg for, at billedet bliver et block-element */
 }
 .boat_nederst img {
-  width: 20%;
+  width: 18%;
   rotate: -25deg;
   margin: 1rem;
   display: block; /* Sørg for, at billedet bliver et block-element */
@@ -112,4 +91,116 @@ h2 {
 .boelge2 {
   width: 45%;
   transform: translate(0%, 73%);
+}
+.fakta {
+  text-align: center;
+  font-family: Playfair Display;
+  margin: 2rem;
+}
+.orange_tekststykke {
+  background-color: rgb(255, 126, 34);
+  font-size: 15px;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+.stor_tekst {
+  font-size: 30px;
+}
+.knapper {
+  display: grid;
+  margin: 4px;
+  gap: 10px;
+}
+.boat img {
+  margin-left: auto;
+  width: 18%;
+  transform: translate(-6%, 23%);
+  rotate: -7deg;
+  display: block; /* Sørg for, at billedet bliver et block-element */
+}
+.boat_nederst img {
+  width: 24%;
+  rotate: -25deg;
+  margin: 1.5rem;
+  display: block; /* Sørg for, at billedet bliver et block-element */
+}
+@media (min-width: 850px) {
+  h1 {
+    font-size: 190px;
+  }
+
+  h2 {
+    font-size: 30px;
+    grid-column: 3 / span 4;
+  }
+  p {
+    font-family: Playfair Display;
+  }
+  .underoverskrift {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .overskrift {
+    margin: 1rem 15rem;
+  }
+  .nederst {
+    margin-left: 5rem;
+  }
+  .tal_font {
+    font-size: 275px;
+    padding-left: 5rem;
+  }
+  .fakta {
+    margin: 5rem;
+  }
+  .orange_tekststykke {
+    font-size: 30px;
+    padding: 3rem;
+    margin: 4rem 0;
+  }
+  .stor_tekst {
+    font-size: 60px;
+  }
+  .knapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 25px;
+  }
+  .boat img {
+    margin-left: auto;
+    width: 14%;
+    transform: translate(-6%, 55%);
+    rotate: -7deg;
+    display: block; /* Sørg for, at billedet bliver et block-element */
+  }
+  .boat_nederst img {
+    width: 18%;
+    rotate: -25deg;
+    margin: 1rem;
+    display: block; /* Sørg for, at billedet bliver et block-element */
+  }
+
+  .boat_oppe {
+    position: relative;
+    rotate: -25deg;
+  }
+
+  .boat_oppe img {
+    position: absolute;
+    width: 20%;
+    top: 50%; /* Centrer lodret */
+    left: 50%; /* Centrer vandret */
+    transform: translate(
+      -38%,
+      -75%
+    ); /* Juster billedet for præcis centrering */
+  }
+  .boelge1 {
+    transform: translate(126%, 99%);
+    width: 45%;
+  }
+  .boelge2 {
+    width: 45%;
+    transform: translate(0%, 73%);
+  }
 }
