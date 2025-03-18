@@ -1,0 +1,49 @@
+---
+
+---
+
+<article>
+  <div class="some">
+    <a href="/index">
+      <img src="../src/assets/Facebook.svg" alt="facebook" />
+    </a>
+    <a href="/index">
+      <img src="../src/assets/Instagram.svg" alt="instagram" />
+    </a>
+    <a href="/index">
+      <img src="../src/assets/email.svg" alt="email" />
+    </a>
+  </div>
+
+  <div class="footer_grid">
+    <img src="../src/assets/venstrefoot.png" alt="vf" />
+    <img class="logo" src="../src/assets/logo.png" alt="logo" />
+    <img src="../src/assets/højrefoot.png" alt="hf" />
+  </div>
+</article>
+
+<style>
+  .footer_grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    place-items: center;
+  }
+
+  .footer_grid img {
+  }
+
+  a img {
+    width: 35px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .some {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+</style>
