@@ -1,0 +1,11 @@
+---
+const { title, description, image } = Astro.props;
+---
+
+<div class="gallericard">
+  <h2 class="event-title">{title}</h2>
+  <img src={image} alt={title} class="event-image" />
+  <p class="event-description">{description}</p>
+</div>
+
+<style></style>
